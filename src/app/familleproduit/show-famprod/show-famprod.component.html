@@ -1,0 +1,18 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NomFamille</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr
+            *ngFor="let dataItem of FamproduitList">
+            <td>{{dataItem.Id}}</td>
+            <td>{{dataItem.NomFamille}}</td>
+            <td>
+                <button type="button">edit</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
